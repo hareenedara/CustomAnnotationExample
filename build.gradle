@@ -1,0 +1,19 @@
+group 'samples'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    maven { url "http://repo-proxy.jpmchase.net/maven/content/groups/jpmc-public" }
+}
+
+dependencies {
+    compile 'javax.validation:validation-api:+'
+    compile 'org.apache.commons:commons-lang3:+'
+    compile 'org.hibernate:hibernate-validator:+'
+    compile 'org.glassfish:javax.el:+'
+}
